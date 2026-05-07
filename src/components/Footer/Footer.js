@@ -8,6 +8,7 @@ const Footer = () => {
       <div className="footer__top">
         <div className="footer__section">
           <h4 className="footer__heading">ABOUT</h4>
+
           <ul className="footer__list">
             <li><a href="/">Contact Us</a></li>
             <li><a href="/">About Us</a></li>
@@ -21,6 +22,7 @@ const Footer = () => {
 
         <div className="footer__section">
           <h4 className="footer__heading">HELP</h4>
+
           <ul className="footer__list">
             <li><a href="/">Payments</a></li>
             <li><a href="/">Shipping</a></li>
@@ -32,6 +34,7 @@ const Footer = () => {
 
         <div className="footer__section">
           <h4 className="footer__heading">CONSUMER POLICY</h4>
+
           <ul className="footer__list">
             <li><a href="/">Cancellation & Returns</a></li>
             <li><a href="/">Terms Of Use</a></li>
@@ -45,6 +48,7 @@ const Footer = () => {
 
         <div className="footer__section">
           <h4 className="footer__heading">SOCIAL</h4>
+
           <ul className="footer__list">
             <li><a href="/">Facebook</a></li>
             <li><a href="/">Twitter</a></li>
@@ -55,6 +59,7 @@ const Footer = () => {
         <div className="footer__section footer__section--right">
           <div className="footer__app">
             <h4 className="footer__heading">MAIL US</h4>
+
             <p className="footer__address">
               Flipkart Internet Private Limited,<br />
               Buildings Alyssa, Begonia &<br />
@@ -116,12 +121,25 @@ const Footer = () => {
           </a>
         </div>
 
-        <p className="footer__copy">© 2007-2024 Flipkart.com</p>
+        <div className="footer__copy-wrapper">
+          <p className="footer__copy">
+            © 2007-2024 Flipkart.com
+          </p>
+
+          <p className="footer__developer">
+            Designed & Developed by
+            <span className="footer__developer-name">
+              {' '}VTCodeX
+            </span>
+          </p>
+        </div>
       </div>
 
       {/* Payment Methods */}
       <div className="footer__payments">
-        <span className="footer__pay-label">Payment Methods</span>
+        <span className="footer__pay-label">
+          Payment Methods
+        </span>
 
         <div className="footer__pay-icons">
           <span className="pay-icon">Visa</span>
